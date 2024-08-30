@@ -50,6 +50,17 @@
   </div>
 </template>
 
+<script>
+  export default {
+    name: 'Maker',
+    asyncData({ isDev, redirect }) {
+      if (!isDev) {
+        redirect('/');
+      }
+    },
+  };
+</script>
+
 <script setup>
   import SHIRTS from '~/data/shirts.json';
 
