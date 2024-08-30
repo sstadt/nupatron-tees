@@ -50,18 +50,9 @@
   </div>
 </template>
 
-<script>
-  export default {
-    name: 'Maker',
-    asyncData({ isDev, redirect }) {
-      if (!isDev) {
-        redirect('/');
-      }
-    },
-  };
-</script>
-
 <script setup>
+  if (process.env.NODE_ENV !== 'development') navigateTo('/');
+
   import SHIRTS from '~/data/shirts.json';
 
   import { Vue3ColorPicker } from '@cyhnkckali/vue3-color-picker';
