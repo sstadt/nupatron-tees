@@ -7,8 +7,6 @@ export const useTabs = ({ tabs }) => {
     const currentTabIndex = tabs.findIndex((tab) => tab.id === activeTab.value.id);
     const newTabIndex = tabs.findIndex((tab) => tab.id === newTab.id);
 
-    console.log(currentTabIndex, newTabIndex);
-
     tabTransition.value = currentTabIndex < newTabIndex
       ? 'paginate-right'
       : 'paginate-left';
