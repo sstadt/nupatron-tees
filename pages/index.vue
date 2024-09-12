@@ -1,6 +1,6 @@
 <template>
-  <div class="p-10 h-screen w-full relative flex justify-center items-center flex-col space-y-12">
-    <p v-if="design.type === 'simple-text'" class="text-6xl">
+  <div class="message-wrapper p-10 w-full relative flex justify-center items-center flex-col space-y-12">
+    <p v-if="design.type === 'simple-text'" class="text-6xl text-center">
       {{ design.options.text }}
     </p>
     <img v-else-if="design.type === 'simple-image'" :src="simpleImageName" />
@@ -20,3 +20,9 @@
     return `images/${design.options.image}`;
   });
 </script>
+
+<style lang="scss" scoped>
+  .message-wrapper {
+    height: 100dvh;
+  }
+</style>
