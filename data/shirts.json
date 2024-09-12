@@ -14,5 +14,69 @@
     "options": {
       "image": "swinger.jpg"
     }
+  },
+  {
+    "id": "060c7239-cbf0-4a4d-96b6-dec5aaf17ead",
+    "title": "Piss Off",
+    "type": "simple-text",
+    "options": {
+      "text": "Piss Off"
+    }
+  },
+  {
+    "id": "3458b045-0ff4-48bc-a81a-020bcccca585",
+    "title": "Go Away",
+    "type": "simple-text",
+    "options": {
+      "text": "Go Away"
+    }
+  },
+  {
+    "id": "7ca5e81b-7d4e-4447-82d4-67918483b295",
+    "title": "How to keep an idiot busy for hours (left arm)",
+    "type": "simple-text",
+    "options": {
+      "text": "Scan Right Arm"
+    }
+  },
+  {
+    "id": "c3026f6a-2d9b-4278-8a8e-933dbe13de52",
+    "title": "How to keep an idiot busy for hours (right arm)",
+    "type": "simple-text",
+    "options": {
+      "text": "Scan Left Arm"
+    }
+  },
+  {
+    "id": "e6d5393a-4be5-46d1-ae62-c7a4c505b634",
+    "title": "Single and Ready to Mingle",
+    "type": "simple-text",
+    "options": {
+      "text": "Single and Ready to Mingle"
+    }
+  },
+  {
+    "id": "2e0ce951-3652-4f62-94fa-7661c1fd9848",
+    "title": "Wingman",
+    "type": "simple-text",
+    "options": {
+      "text": "Wingman"
+    }
+  },
+  {
+    "id": "869720ab-bdec-49cd-8fe5-3d2bccaeb0cd",
+    "title": "Read to Rizz",
+    "type": "simple-text",
+    "options": {
+      "text": "Ready to Rizz!"
+    }
+  },
+  {
+    "id": "f305a0ab-7825-4a67-8b0d-50df37aed99a",
+    "title": "Leave Me the Fuck Alone",
+    "type": "simple-text",
+    "options": {
+      "text": "Leave Me the Fuck Alone."
+    }
   }
 ]

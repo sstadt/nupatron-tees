@@ -11,7 +11,7 @@
               v-for="tab in tabs"
               :key="tab.name"
               class="text-sm text-slate-500 font-bold"
-              :class="{ 'text-black border-b': tab.id === activeTab.id }"
+              :class="{ 'text-black border-b border-b-slate-600': tab.id === activeTab.id }"
               @click="setTab(tab)"
             >
               {{ tab.name }}
@@ -24,6 +24,9 @@
             <div v-else-if="activeTab.id === 'simple-image'" class="space-y-2">
               <InputText label="Image File" v-model="simpleImage" />
               <img :src="simpleImageName" />
+            </div>
+            <div v-else-if="activeTab.id === 'custom-url'" class="space-y-2">
+              <InputText label="URL" v-model="customUrl" />
             </div>
           </transition>
           <div class="space-x-4">
@@ -72,12 +75,14 @@
   const title = ref('');
   const simpleText = ref('');
   const simpleImage = ref('');
+  const customUrl = ref('');
 
   // Tabs
 
   const tabs = [
     { name: 'Simple Text', id: 'simple-text' },
     { name: 'Image', id: 'simple-image' },
+    { name: 'Custom URL', id: 'custom-url' },
   ];
   const {
     activeTab,
@@ -117,6 +122,8 @@
   });
 
   const qrcodeUrl = computed(() => {
+    if (activeTab.value.id === 'custom-url') return customUrl.value;
+
     return `${productionUrl}?t=${id.value}`;
   });
 
