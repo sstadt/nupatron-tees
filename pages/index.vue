@@ -21,7 +21,7 @@
   });
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
   .message-wrapper {
     height: 100dvh;
   }
