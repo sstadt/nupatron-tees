@@ -4,7 +4,7 @@
       {{ design.options.text }}
     </p>
     <img v-else-if="design.type === 'simple-image'" :src="simpleImageName" />
-    <a class="text-xs text-slate-500 text-center absolute bottom-0 left-0 w-full block py-2 hover:underline" href="/">
+    <a class="text-xs text-slate-500 text-center absolute bottom-0 left-0 w-full block py-2 hover:underline" href="https://threadorama.printify.me/products">
       Threadorama - Say it without saying it.
     </a>
   </div>
