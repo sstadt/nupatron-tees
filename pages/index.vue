@@ -1,4 +1,7 @@
 <template>
+  <Head>
+    <Title>Threadorama - {{ pageTitle }}</Title>
+  </Head>
   <div class="message-wrapper p-10 w-full relative flex justify-center items-center flex-col space-y-12">
     <p v-if="design.type === 'simple-text'" class="text-6xl text-center">
       {{ design.options.text }}
@@ -15,6 +18,10 @@
 
   const { query } = useRoute();
   const design = query.t ? SHIRTS.find((shirt) => shirt.id === query.t) : {};
+
+  const pageTitle = computed(() => {
+    return design?.title;
+  });
 
   const simpleImageName = computed(() => {
     return `images/${design.options.image}`;
