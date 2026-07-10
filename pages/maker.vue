@@ -44,6 +44,7 @@
               :style="{ 'height': `${qrcodeSize / 2}px` }"
               :value="qrcodeUrl"
               :size="qrcodeSize"
+              :render-as="'svg'"
               level="H"
             />
           </div>
